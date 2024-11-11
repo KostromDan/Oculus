@@ -36,6 +36,7 @@ public class LightningHandler extends RenderType {
 				.createCompositeState(true);
 		return create("mek_flame", DefaultVertexFormat.POSITION_TEX_COLOR, VertexFormat.Mode.QUADS, 256, true, false, state);
 	});
+
 	public static final RenderType MEKASUIT = create("mekasuit", DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS, 131_072, true, false,
 			RenderType.CompositeState.builder()
 					.setShaderState(new ShaderStateShard(ShaderAccess::getMekasuitShader))

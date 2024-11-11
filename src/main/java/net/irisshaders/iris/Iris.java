@@ -119,6 +119,10 @@ public class Iris {
 		}
 	}
 
+	public static boolean isPackInUseQuick() {
+		return pipelineManager.getPipelineNullable() instanceof IrisRenderingPipeline;
+	}
+
 	public void onKeyRegister(RegisterKeyMappingsEvent event) {
 		event.register(reloadKeybind);
 		event.register(toggleShadersKeybind);

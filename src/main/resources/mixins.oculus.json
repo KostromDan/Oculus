@@ -91,7 +91,8 @@
     "texture.pbr.MixinTextureAtlas",
     "texture.pbr.MixinTextureAtlasSprite",
     "state_tracking.MixinPostChain",
-    "state_tracking.MixinRenderTarget"
+    "state_tracking.MixinRenderTarget",
+    "flywheel.WorldAttachedMixin"
   ],
   "injectors": {
     "defaultRequire": 1,

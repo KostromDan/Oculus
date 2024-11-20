@@ -38,6 +38,12 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
+	repositories {
+		maven {
+			name "tterrag maven"
+			url "https://maven.tterrag.com/"
+		}
+	}
 }
 
 dependencies {
@@ -46,6 +52,7 @@ dependencies {
 	forge "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 	
 	modCompileOnly "maven.modrinth:rubidium:0.6.2c"
+	modCompileOnly "com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:0.6.11-22"
 	//modCompileOnly "me.jellysquid.mods:Rubidium:0.6.3"
 }
 
